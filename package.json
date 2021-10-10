@@ -34,7 +34,7 @@
   "author": "Tim Kye",
   "license": "Apache-2.0",
   "dependencies": {
-    "adm-zip": "^0.4.7",
+    "adm-zip": "^0.4.11",
     "aws-sdk": "^2.60.0",
     "co": "^4.6.0",
     "dynamodb-backup-restore": "^0.2.17",
