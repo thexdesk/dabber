@@ -10,7 +10,9 @@
     "test:unit": "blue-tape test/**/**.js | ./node_modules/.bin/tap-spec",
     "test:watch": "npm run test:unit -s & ./node_modules/.bin/chokidar 'src/**/*.js' 'test/**/*.js' -c \"npm run test:unit -s\"",
     "build:lambda": "node src/fuse.js && mkdir -p assets && cp build/lambda.js assets/lambda.js",
-    "build": "npm run build:lambda && pkg --out-path bin ."
+    "build": "npm run build:lambda && pkg --out-path bin .",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "bin": {
     "dabber": "src/cli.js"
@@ -44,7 +46,8 @@
     "node-zip": "^1.1.1",
     "pify": "^3.0.0",
     "uuid": "^3.0.1",
-    "yargs": "^8.0.1"
+    "yargs": "^8.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -55,5 +58,6 @@
     "snazzy": "^7.0.0",
     "standard": "^10.0.2",
     "tap-spec": "^4.1.1"
-  }
+  },
+  "snyk": true
 }
