@@ -35,7 +35,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "adm-zip": "^0.4.7",
-    "aws-sdk": "^2.60.0",
+    "aws-sdk": "^2.1354.0",
     "co": "^4.6.0",
     "dynamodb-backup-restore": "^0.2.17",
     "fuse-box": "^2.0.2-beta.1",
